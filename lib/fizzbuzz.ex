@@ -6,7 +6,7 @@ defmodule Fizzbuzz do
   def fizzbuzz(_from, _to), do:
     raise "invalid argument"
 
-  defp fizzbuzz(num) when rem(num, 15) == 0, do:
+  defp fizzbuzz(num) when rem(num, 3)==0 and rem(num, 5) == 0, do:
     "FizzBuzz"
 
   defp fizzbuzz(num) when rem(num, 5) == 0, do:
@@ -16,4 +16,6 @@ defmodule Fizzbuzz do
       "Fizz"
 
   defp fizzbuzz(num), do: num
+
+
 end
